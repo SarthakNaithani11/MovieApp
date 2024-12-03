@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieApp.DetailPage4"
+             xmlns:viewmodel="clr-namespace:MovieApp.ViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodel:MainViewModel"
+             >
+    <ScrollView>
+        <FlexLayout
+        JustifyContent="Start"
+        Wrap="Wrap">
+
+            <ImageButton
+            Source="{Binding Name1}"
+            WidthRequest="195"
+            HeightRequest="292.5"
+            SemanticProperties.Hint="go to movie"
+            Command="{Binding MovieCommand}"
+            />
+            <ImageButton
+            Source="{Binding Name2}"
+            WidthRequest="195"
+            HeightRequest="292.5"
+            SemanticProperties.Hint="go to movie"
+            Command="{Binding Movie2Command}"
+            />
+            <ImageButton
+            Source="{Binding Name3}"
+            WidthRequest="195"
+            HeightRequest="292.5"
+            SemanticProperties.Hint="go to movie"
+            Command="{Binding Movie3Command}"
+            />
+            <ImageButton
+            Source="{Binding Name4}"
+            WidthRequest="195"
+            HeightRequest="292.5"
+            SemanticProperties.Hint="go to movie"
+            Command="{Binding Movie4Command}"
+            />
+
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>
